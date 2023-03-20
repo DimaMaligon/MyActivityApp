@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="183dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="128dp"
+        android:gravity="center"
+        android:text="TextActivity1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bMain2"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onClickGoMain"
+        android:text="Main Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/bTest2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="onClickGoTest2"
+        android:text="Test Activity 2"
+        app:layout_constraintEnd_toEndOf="@+id/bMain2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bMain2"
+        app:layout_constraintTop_toBottomOf="@+id/bMain2" />
+
+    <Button
+        android:id="@+id/bClose2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="onClickClose"
+        android:text="Close"
+        app:layout_constraintEnd_toEndOf="@+id/bTest2"
+        app:layout_constraintStart_toStartOf="@+id/bTest2"
+        app:layout_constraintTop_toBottomOf="@+id/bTest2" />
+
+    <TextView
+        android:id="@+id/textScreenA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Экран"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bClose2" />
+
+    <EditText
+        android:id="@+id/edField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Type your name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textScreenA1"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/textScreenA1"
+        app:layout_constraintTop_toBottomOf="@+id/textScreenA1" />
+
+    <Button
+        android:id="@+id/bAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="onClickAnswer"
+        android:text="Answer"
+        app:layout_constraintEnd_toEndOf="@+id/edField"
+        app:layout_constraintStart_toStartOf="@+id/edField"
+        app:layout_constraintTop_toBottomOf="@+id/edField" />
+</androidx.constraintlayout.widget.ConstraintLayout>
